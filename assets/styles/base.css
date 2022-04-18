@@ -1,0 +1,22 @@
+:root {
+  --app-height: 100vh;
+  --app-width: 1440px;
+  --app-padding: 4rem;
+
+  /* COLORS */
+  --c-black: #000;
+  --c-white: #fff;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}

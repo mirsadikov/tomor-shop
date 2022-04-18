@@ -1,12 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tomor</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/assets/styles/home.css" />
+    <script>
+      const appHeight = () => {
+        const doc = document.documentElement;
+        doc.style.setProperty('--app-height', `${window.innerHeight}px`);
+      };
+      window.addEventListener('resize', appHeight);
+      appHeight();
+    </script>
+    <title>TOMOR</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <input
+          type="checkbox"
+          name="nav"
+          id="nav-checkbox"
+          class="header__nav-toggle-checkbox"
+          autocomplete="off"
+        />
+        <label for="nav-checkbox" class="header__nav-toggole-label">
+          <div class="header__hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </label>
+        <a href="/cart.html" class="header__icon-link header__icon-link--mobile"
+          ><img
+            src="/assets/images/icons/bag.svg"
+            alt="bag"
+            class="header__icon"
+        /></a>
+        <a href="/" class="header__logo-link">
+          <img
+            src="/assets/images/logo.svg"
+            alt="TOMOR LOGO"
+            class="header__logo"
+          />
+        </a>
+        <div class="header__header">
+          <div class="header__top">
+            <div class="header__search">
+              <input
+                type="text"
+                class="header__search-input"
+                placeholder="search"
+              />
+              <button class="header__search-btn">
+                <img src="/assets/images/icons/magnifier.svg" alt="magnifier" />
+              </button>
+            </div>
+
+            <div class="header__icons">
+              <a href="#" class="header__icon-link"
+                ><img
+                  src="/assets/images/icons/profile.svg"
+                  alt="profile"
+                  class="header__icon"
+              /></a>
+              <a href="#" class="header__icon-link"
+                ><img
+                  src="/assets/images/icons/heart.svg"
+                  alt="heart"
+                  class="header__icon"
+              /></a>
+              <a href="/cart.html" class="header__icon-link"
+                ><img
+                  src="/assets/images/icons/bag.svg"
+                  alt="bag"
+                  class="header__icon"
+              /></a>
+            </div>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__nav-links">
+              <li class="header__nav-link">
+                <a href="#" class="header__nav-link-href">New</a>
+              </li>
+              <li class="header__nav-link">
+                <a href="#" class="header__nav-link-href">Designers</a>
+              </li>
+              <li class="header__nav-link">
+                <a href="#" class="header__nav-link-href">Clothes</a>
+              </li>
+              <li class="header__nav-link">
+                <a href="#" class="header__nav-link-href">Shoes</a>
+              </li>
+              <li class="header__nav-link">
+                <a href="#" class="header__nav-link-href">Accessories</a>
+              </li>
+              <li class="header__nav-link">
+                <a href="#" class="header__nav-link-href">Bags</a>
+              </li>
+              <li class="header__nav-link">
+                <a href="#" class="header__nav-link-href">Jewelry</a>
+              </li>
+              <li class="header__nav-link">
+                <a href="#" class="header__nav-link-href">Beauty</a>
+              </li>
+              <li class="header__nav-link">
+                <a href="#" class="header__nav-link-href">Editorial</a>
+              </li>
+              <li class="header__nav-link">
+                <a href="#" class="header__nav-link-href">Sale</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
