@@ -1,5 +1,6 @@
 .header {
   padding: var(--app-padding);
+  padding-bottom: 2.4rem;
 }
 
 .header__container {

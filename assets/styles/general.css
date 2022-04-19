@@ -1,19 +1,25 @@
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    color: var(--c-black);
+  text-decoration: none;
+  color: var(--c-black);
 }
 
 button {
-    user-select: none;
-    cursor: pointer;
+  user-select: none;
+  cursor: pointer;
 }
 
 .container {
-    max-width: var(--app-width);
-    margin: 0 auto;
+  max-width: var(--app-width);
+  margin: 0 auto;
 }
 
+.arrow-btn img {
+  transition: transform 0.2s ease;
+}
+.arrow-btn:hover img {
+  transform: translateX(5px);
+}

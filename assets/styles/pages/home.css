@@ -1,0 +1,360 @@
+.moving-bar {
+  background-color: var(--c-primary);
+  padding: 8px 0;
+}
+
+.moving-bar__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.moving-bar__item {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 170%;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.moving-bar__item:hover {
+  text-decoration: underline;
+}
+
+.moving-bar__dot {
+  margin: 0 20px;
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.moving-bar__list > *:nth-child(n + 14) {
+  display: none;
+}
+
+/* HERO */
+.hero__container {
+  padding: var(--app-padding);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--app-padding);
+}
+
+.hero__img {
+  width: 100%;
+  max-height: 520px;
+  object-fit: contain;
+}
+
+.hero__rich-text {
+  padding: 0 var(--app-padding);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero__sub,
+.arrivals__sub,
+.bsellers__sub {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  text-transform: uppercase;
+  color: #292929;
+}
+
+.hero__title {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 100%;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.hero__text,
+.arrivals__info {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  margin: 24px 0;
+}
+
+.hero__link span,
+.bseller__link span,
+.arrivals__link span,
+.mission__link span,
+.collections__link span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  margin-right: 10px;
+}
+
+/* ARRIVALS */
+.arrivals__container {
+  padding: 0 var(--app-padding);
+  margin: var(--app-padding) auto;
+}
+
+.arrivals__main-card {
+  border: 1px solid var(--c-black);
+  text-align: center;
+  padding: 6rem 0 9rem;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  max-height: 520px;
+  max-width: 330px;
+}
+
+.arrivals__title,
+.bsellers__title,
+.collections__title,
+.collections-slider__title {
+  margin-top: 1.8rem;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.arrivals__info {
+  /* margin: 2.4rem 0 12rem; */
+  flex: 1;
+}
+
+/* .arrivals__list .swiper-slide {
+  width: 328px !important;
+} */
+
+.arrivals__next-btn {
+  right: 0;
+  justify-content: flex-end;
+}
+
+/* SWIPER */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  background-color: var(--c-white);
+  display: flex;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  height: 40px;
+  background-color: var(--c-white);
+  display: flex;
+  padding: 0 4px;
+}
+.swiper-button-next::after {
+  content: url(/assets/images/icons/chevron-right-big.svg);
+}
+.swiper-button-prev::after {
+  content: url(/assets/images/icons/chevron-left-big.svg);
+}
+
+/* BEST SELLERS */
+
+.bsellers {
+  padding: 8rem 0;
+}
+
+.bsellers__container {
+  max-width: calc(1140px + var(--app-padding) * 2);
+  padding: 0 var(--app-padding);
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.bsellers__title {
+  margin-top: 10px;
+  margin-bottom: 6.5rem;
+}
+
+.bseller2 {
+  grid-row: 1 / span 2;
+  grid-column: 2;
+}
+
+.bseller1 {
+  max-width: 443px;
+}
+
+.bseller__img {
+  width: 100%;
+}
+
+.bseller__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.bseller__title {
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 120%;
+}
+
+/* MISSION */
+.mission {
+  padding: 5rem 0 7.8rem;
+  background-color: var(--c-primary);
+}
+.mission__container {
+  max-width: calc(1140px + var(--app-padding) * 2);
+  padding: 0 var(--app-padding);
+}
+
+.mission__sub,
+.collections__sub,
+.collections-slider__sub {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 170%;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.mission__body {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  margin-top: 10px;
+}
+
+.mission__text {
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 120%;
+  max-width: 77rem;
+}
+
+/* COLLECTION */
+.collections {
+  padding: 8rem 0;
+}
+
+.collections__container {
+  max-width: calc(1140px + var(--app-padding) * 2);
+  padding: 0 var(--app-padding);
+}
+
+.collections__header,
+.collections-slider__header {
+  text-align: center;
+}
+
+.collections__title {
+  margin-top: 8px;
+}
+
+.collections__body {
+  margin-top: 4.8rem;
+  display: flex;
+}
+
+.collections__ad {
+  width: 45%;
+}
+
+.collections--reverse .collections__ad {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.collections__img {
+  display: block;
+  margin-bottom: 16px;
+  width: 100%;
+  max-width: 438px;
+}
+
+.collections__products {
+  position: relative;
+  width: 55%;
+}
+
+.collections__products-container {
+  max-width: 47rem;
+}
+
+/* NEWIN */
+.newin .product--small,
+.seasonal .product--small {
+  margin-top: 0 !important;
+}
+
+.collections__products .swiper-button-next {
+  right: 0;
+  justify-content: flex-end;
+}
+.collections__products .swiper-button-prev {
+  justify-content: flex-start;
+  left: 0;
+}
+
+/* COLLECTION SLIDER */
+.collections-slider__container {
+  max-width: calc(1140px + var(--app-padding) * 2);
+  padding: 0 var(--app-padding);
+}
+
+.collections-slider__body {
+  margin-top: 4.8rem;
+}
+
+.collections-slider__slider {
+  max-height: 516px;
+}
+
+.collections-slider__slider .swiper-slide {
+  width: calc(25% - 16px);
+}
+
+.collections-slider__slider .swiper-slide:nth-child(1) {
+  width: calc(75% - 16px) !important;
+}
+
+.collections-slide__img {
+  width: 100%;
+  display: block;
+}
+
+.collections-slider__next-btn {
+    right: 0;
+}
+
+@media only screen and (max-width: 1300px) {
+  .moving-bar__container {
+    overflow-x: hidden;
+  }
+  .moving-bar__list {
+    padding-left: var(--app-padding);
+    animation: marquee 35s infinite linear forwards;
+    width: max-content;
+    display: inline-flex;
+  }
+
+  .moving-bar__list > *:nth-child(n + 14) {
+    display: block;
+  }
+}

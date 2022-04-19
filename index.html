@@ -10,7 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="/assets/styles/home.css" />
     <script>
       const appHeight = () => {
@@ -20,6 +23,7 @@
       window.addEventListener('resize', appHeight);
       appHeight();
     </script>
+    <script type="module" src="/assets/scripts/home.js"></script>
     <title>TOMOR</title>
   </head>
   <body>
@@ -124,5 +128,585 @@
         </div>
       </div>
     </header>
+
+    <!-- MAIN -->
+    <main class="main">
+      <section class="moving-bar">
+        <div class="moving-bar__container container">
+          <ul class="moving-bar__list">
+            <li class="moving-bar__item"><a href="#">New arrivals</a></li>
+            <div class="moving-bar__dot"></div>
+            <li class="moving-bar__item">
+              <a href="#">Our spring/summer baG collection</a>
+            </li>
+            <div class="moving-bar__dot"></div>
+            <li class="moving-bar__item">
+              <a href="#">Sustainable fashion</a>
+            </li>
+            <div class="moving-bar__dot"></div>
+            <li class="moving-bar__item">
+              <a href="#">Best beauty products</a>
+            </li>
+            <div class="moving-bar__dot"></div>
+            <li class="moving-bar__item">
+              <a href="#">Night time skin routine</a>
+            </li>
+            <div class="moving-bar__dot"></div>
+            <li class="moving-bar__item"><a href="#">comfort & style</a></li>
+            <div class="moving-bar__dot"></div>
+            <li class="moving-bar__item"><a href="#">Just in high heels</a></li>
+            <div class="moving-bar__dot"></div>
+            <li class="moving-bar__item"><a href="#">New arrivals</a></li>
+            <div class="moving-bar__dot"></div>
+            <li class="moving-bar__item">
+              <a href="#">Our spring/summer baG collectioin</a>
+            </li>
+            <div class="moving-bar__dot"></div>
+            <li class="moving-bar__item">
+              <a href="#">Sustainable fashion</a>
+            </li>
+            <div class="moving-bar__dot"></div>
+            <li class="moving-bar__item">
+              <a href="#">Best beauty products</a>
+            </li>
+            <div class="moving-bar__dot"></div>
+            <li class="moving-bar__item">
+              <a href="#">Night time skin routine</a>
+            </li>
+            <div class="moving-bar__dot"></div>
+            <li class="moving-bar__item"><a href="#">comfort & style</a></li>
+            <div class="moving-bar__dot"></div>
+            <li class="moving-bar__item"><a href="#">Just in high heels</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero__container container">
+          <div class="hero__rich-text">
+            <h2 class="hero__sub">What’s New</h2>
+            <h1 class="hero__title">Spring has sprung</h1>
+            <p class="hero__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a href="/shop.html" class="hero__link arrow-btn"
+              ><span>Shop The Story</span
+              ><img src="/assets/images/icons/arrow-right-long.svg" alt="arrow"
+            /></a>
+          </div>
+          <img src="/assets/images/hero.png" alt="hero" class="hero__img" />
+        </div>
+      </section>
+
+      <!-- ARRIVALS -->
+      <section class="arrivals">
+        <div class="arrivals__container container">
+          <div class="arrivals__list swiper">
+            <div class="swiper-wrapper">
+              <div class="arrivals__main-card swiper-slide">
+                <h3 class="arrivals__sub">YOU’VE ARRIVED</h3>
+                <h2 class="arrivals__title">New Arrivals</h2>
+                <p class="arrivals__info">
+                  New styles just in, shop our latest arrivals.
+                </p>
+                <a href="/shop.html" class="arrivals__link arrow-btn"
+                  ><span>Shop The Story</span
+                  ><img
+                    src="/assets/images/icons/arrow-right-long.svg"
+                    alt="arrow"
+                /></a>
+              </div>
+
+              <a href="/product.html" class="product swiper-slide">
+                <img
+                  src="/assets/images/home/arrival1.png"
+                  alt="product"
+                  class="product__img"
+                />
+                <h3 class="product__title">Gucci</h3>
+                <p class="product__info">Zipper Mini Dress</p>
+                <p class="product__price">$879.00</p>
+                <button class="product__heart">
+                  <img src="/assets/images/icons/heart-solid.svg" alt="heart" />
+                </button>
+              </a>
+
+              <a href="/product.html" class="product swiper-slide">
+                <img
+                  src="/assets/images/home/arrival2.png"
+                  alt="product"
+                  class="product__img"
+                />
+                <h3 class="product__title">Alexander wang</h3>
+                <p class="product__info">Mix Pattern Leather Jacket</p>
+                <p class="product__price">$879.00</p>
+                <button class="product__heart">
+                  <img src="/assets/images/icons/heart.svg" alt="heart" />
+                </button>
+              </a>
+
+              <a href="/product.html" class="product swiper-slide">
+                <img
+                  src="/assets/images/home/arrival3.png"
+                  alt="product"
+                  class="product__img"
+                />
+                <h3 class="product__title">Gucci</h3>
+                <p class="product__info">Zipper Mini Dress</p>
+                <p class="product__price">$879.00</p>
+                <button class="product__heart">
+                  <img src="/assets/images/icons/heart.svg" alt="heart" />
+                </button>
+              </a>
+
+              <a href="/product.html" class="product swiper-slide">
+                <img
+                  src="/assets/images/home/arrival2.png"
+                  alt="product"
+                  class="product__img"
+                />
+                <h3 class="product__title">Alexander wang</h3>
+                <p class="product__info">Mix Pattern Leather Jacket</p>
+                <p class="product__price">$879.00</p>
+                <button class="product__heart">
+                  <img src="/assets/images/icons/heart.svg" alt="heart" />
+                </button>
+              </a>
+
+              <a href="/product.html" class="product swiper-slide">
+                <img
+                  src="/assets/images/home/arrival1.png"
+                  alt="product"
+                  class="product__img"
+                />
+                <h3 class="product__title">Alexander wang</h3>
+                <p class="product__info">Mix Pattern Leather Jacket</p>
+                <p class="product__price">$879.00</p>
+                <button class="product__heart">
+                  <img src="/assets/images/icons/heart-solid.svg" alt="heart" />
+                </button>
+              </a>
+            </div>
+            <div class="swiper-button-next arrivals__next-btn"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BEST SELLERS -->
+      <section class="bsellers">
+        <div class="bsellers__container container">
+          <div class="bsellers__header">
+            <h3 class="bsellers__sub">BEST SELLERS</h3>
+            <h2 class="bsellers__title">Selected Collections</h2>
+          </div>
+          <div class="bseller bseller1">
+            <img
+              src="/assets/images/home/bseller1.jpg"
+              alt="product"
+              class="bseller__img"
+            />
+            <div class="bseller__bottom">
+              <h4 class="bseller__title">Luxe Facial</h4>
+              <a href="/shop.html" class="bseller__link arrow-btn"
+                ><span>Shop Now</span
+                ><img
+                  src="/assets/images/icons/arrow-right-long.svg"
+                  alt="arrow"
+              /></a>
+            </div>
+          </div>
+
+          <div class="bseller bseller2">
+            <img
+              src="/assets/images/home/bseller2.jpg"
+              alt="product"
+              class="bseller__img"
+            />
+            <div class="bseller__bottom">
+              <h4 class="bseller__title">The Spring Edit</h4>
+              <a href="/shop.html" class="bseller__link arrow-btn"
+                ><span>Shop Now</span
+                ><img
+                  src="/assets/images/icons/arrow-right-long.svg"
+                  alt="arrow"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MISSION -->
+      <section class="mission">
+        <div class="mission__container container">
+          <div class="mission__header">
+            <h3 class="mission__sub">Our mission</h3>
+          </div>
+          <div class="mission__body">
+            <h2 class="mission__text">
+              Lorem ipsum dolor sit amet, consectetur incididunt ut labore et
+              dolore magna aliqua.
+            </h2>
+            <a href="/shop.html" class="mission__link arrow-btn"
+              ><span>Sustainability Initiative</span
+              ><img src="/assets/images/icons/arrow-right-long.svg" alt="arrow"
+            /></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- COLLECTION -->
+      <section class="collections newin">
+        <div class="collections__container container">
+          <div class="collections__header">
+            <h3 class="collections__sub">New in</h3>
+            <h2 class="collections__title">Spring dresses</h2>
+          </div>
+
+          <div class="collections__body">
+            <div class="collections__ad">
+              <img
+                src="/assets/images/home/collections-ad-1.png"
+                alt="collection"
+                class="collections__img"
+              />
+              <a href="/shop.html" class="collections__link arrow-btn"
+                ><span>Sustainability Initiative</span
+                ><img
+                  src="/assets/images/icons/arrow-right-long.svg"
+                  alt="arrow"
+              /></a>
+            </div>
+
+            <div class="collections__products">
+              <div class="collections__products-container swiper">
+                <div class="swiper-wrapper">
+                  <a
+                    href="/product.html"
+                    class="product product--small swiper-slide"
+                  >
+                    <img
+                      src="/assets/images/home/arrival1.png"
+                      alt="product"
+                      class="product__img"
+                    />
+                    <h3 class="product__title">Brand name</h3>
+                    <p class="product__info">Zipper Mini Dress</p>
+                    <p class="product__price">$879.00</p>
+                    <button class="product__heart">
+                      <img src="/assets/images/icons/heart.svg" alt="heart" />
+                    </button>
+                  </a>
+                  <a
+                    href="/product.html"
+                    class="product product--small swiper-slide"
+                  >
+                    <img
+                      src="/assets/images/home/arrival2.png"
+                      alt="product"
+                      class="product__img"
+                    />
+                    <h3 class="product__title">Brand name</h3>
+                    <p class="product__info">Zipper Mini Dress</p>
+                    <p class="product__price">$879.00</p>
+                    <button class="product__heart">
+                      <img src="/assets/images/icons/heart.svg" alt="heart" />
+                    </button>
+                  </a>
+                  <a
+                    href="/product.html"
+                    class="product product--small swiper-slide"
+                  >
+                    <img
+                      src="/assets/images/home/arrival3.png"
+                      alt="product"
+                      class="product__img"
+                    />
+                    <h3 class="product__title">Brand name</h3>
+                    <p class="product__info">Zipper Mini Dress</p>
+                    <p class="product__price">$879.00</p>
+                    <button class="product__heart">
+                      <img src="/assets/images/icons/heart.svg" alt="heart" />
+                    </button>
+                  </a>
+                  <a
+                    href="/product.html"
+                    class="product product--small swiper-slide"
+                  >
+                    <img
+                      src="/assets/images/home/arrival3.png"
+                      alt="product"
+                      class="product__img"
+                    />
+                    <h3 class="product__title">Brand name</h3>
+                    <p class="product__info">Zipper Mini Dress</p>
+                    <p class="product__price">$879.00</p>
+                    <button class="product__heart">
+                      <img src="/assets/images/icons/heart.svg" alt="heart" />
+                    </button> </a
+                  ><a
+                    href="/product.html"
+                    class="product product--small swiper-slide"
+                  >
+                    <img
+                      src="/assets/images/home/arrival1.png"
+                      alt="product"
+                      class="product__img"
+                    />
+                    <h3 class="product__title">Brand name</h3>
+                    <p class="product__info">Zipper Mini Dress</p>
+                    <p class="product__price">$879.00</p>
+                    <button class="product__heart">
+                      <img src="/assets/images/icons/heart.svg" alt="heart" />
+                    </button> </a
+                  ><a
+                    href="/product.html"
+                    class="product product--small swiper-slide"
+                  >
+                    <img
+                      src="/assets/images/home/arrival2.png"
+                      alt="product"
+                      class="product__img"
+                    />
+                    <h3 class="product__title">Brand name</h3>
+                    <p class="product__info">Zipper Mini Dress</p>
+                    <p class="product__price">$879.00</p>
+                    <button class="product__heart">
+                      <img src="/assets/images/icons/heart.svg" alt="heart" />
+                    </button>
+                  </a>
+                </div>
+              </div>
+
+              <div class="swiper-button-prev collections__prev-btn"></div>
+              <div class="swiper-button-next collections__next-btn"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COLLECTION SLIDER -->
+      <section class="collections-slider">
+        <div class="collections-slider__container container">
+          <div class="collections-slider__header">
+            <h3 class="collections-slider__sub">FROM THE EDITOR’S DESK</h3>
+            <h2 class="collections-slider__title">Classic Scents by Chanel</h2>
+          </div>
+
+          <div class="collections-slider__body">
+            <div class="collections-slider__slider swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="/assets/images/home/collection-slider.png"
+                    alt="women"
+                    class="collections-slide__img"
+                  />
+                </div>
+                <a href="/product.html" class="product swiper-slide">
+                  <img
+                    src="/assets/images/home/editors1.png"
+                    alt="product"
+                    class="product__img"
+                  />
+                  <h3 class="product__title">Chanel</h3>
+                  <p class="product__info">Eu de Parfum</p>
+                  <p class="product__price">$879.00</p>
+                  <button class="product__heart">
+                    <img src="/assets/images/icons/heart.svg" alt="heart" />
+                  </button>
+                </a>
+                <a href="/product.html" class="swiper-slide product">
+                  <img
+                    src="/assets/images/home/editors2.png"
+                    alt="product"
+                    class="product__img"
+                  />
+                  <h3 class="product__title">Chanel</h3>
+                  <p class="product__info">Eu de Parfum</p>
+                  <p class="product__price">$879.00</p>
+                  <button class="product__heart">
+                    <img src="/assets/images/icons/heart.svg" alt="heart" />
+                  </button>
+                </a>
+                <a href="/product.html" class="swiper-slide product">
+                  <img
+                    src="/assets/images/home/editors3.png"
+                    alt="product"
+                    class="product__img"
+                  />
+                  <h3 class="product__title">Chanel</h3>
+                  <p class="product__info">Eu de Parfum</p>
+                  <p class="product__price">$879.00</p>
+                  <button class="product__heart">
+                    <img src="/assets/images/icons/heart.svg" alt="heart" />
+                  </button>
+                </a>
+                <a href="/product.html" class="swiper-slide product">
+                  <img
+                    src="/assets/images/home/editors4.png"
+                    alt="product"
+                    class="product__img"
+                  />
+                  <h3 class="product__title">Chanel</h3>
+                  <p class="product__info">Eu de Parfum</p>
+                  <p class="product__price">$879.00</p>
+                  <button class="product__heart">
+                    <img src="/assets/images/icons/heart.svg" alt="heart" />
+                  </button>
+                </a>
+                <a href="/product.html" class="swiper-slide product">
+                  <img
+                    src="/assets/images/home/editors5.png"
+                    alt="product"
+                    class="product__img"
+                  />
+                  <h3 class="product__title">Chanel</h3>
+                  <p class="product__info">Eu de Parfum</p>
+                  <p class="product__price">$879.00</p>
+                  <button class="product__heart">
+                    <img src="/assets/images/icons/heart.svg" alt="heart" />
+                  </button>
+                </a>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+              </div>
+              <div class="swiper-button-next collections-slider__next-btn"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COLLECTION -->
+      <section class="collections collections--reverse seasonal">
+        <div class="collections__container container">
+          <div class="collections__header">
+            <h3 class="collections__sub">Seasonal</h3>
+            <h2 class="collections__title">Floral edit</h2>
+          </div>
+
+          <div class="collections__body">
+            <div class="collections__ad">
+              <img
+                src="/assets/images/home/collections-ad-2.png"
+                alt="collection"
+                class="collections__img"
+              />
+              <a href="/shop.html" class="collections__link arrow-btn"
+                ><span>Sustainability Initiative</span
+                ><img
+                  src="/assets/images/icons/arrow-right-long.svg"
+                  alt="arrow"
+              /></a>
+            </div>
+
+            <div class="collections__products">
+              <div class="collections__products-container swiper">
+                <div class="swiper-wrapper">
+                  <a
+                    href="/product.html"
+                    class="product product--small swiper-slide"
+                  >
+                    <img
+                      src="/assets/images/home/arrival1.png"
+                      alt="product"
+                      class="product__img"
+                    />
+                    <h3 class="product__title">Brand name</h3>
+                    <p class="product__info">Zipper Mini Dress</p>
+                    <p class="product__price">$879.00</p>
+                    <button class="product__heart">
+                      <img src="/assets/images/icons/heart.svg" alt="heart" />
+                    </button>
+                  </a>
+                  <a
+                    href="/product.html"
+                    class="product product--small swiper-slide"
+                  >
+                    <img
+                      src="/assets/images/home/arrival2.png"
+                      alt="product"
+                      class="product__img"
+                    />
+                    <h3 class="product__title">Brand name</h3>
+                    <p class="product__info">Zipper Mini Dress</p>
+                    <p class="product__price">$879.00</p>
+                    <button class="product__heart">
+                      <img src="/assets/images/icons/heart.svg" alt="heart" />
+                    </button>
+                  </a>
+                  <a
+                    href="/product.html"
+                    class="product product--small swiper-slide"
+                  >
+                    <img
+                      src="/assets/images/home/arrival3.png"
+                      alt="product"
+                      class="product__img"
+                    />
+                    <h3 class="product__title">Brand name</h3>
+                    <p class="product__info">Zipper Mini Dress</p>
+                    <p class="product__price">$879.00</p>
+                    <button class="product__heart">
+                      <img src="/assets/images/icons/heart.svg" alt="heart" />
+                    </button>
+                  </a>
+                  <a
+                    href="/product.html"
+                    class="product product--small swiper-slide"
+                  >
+                    <img
+                      src="/assets/images/home/arrival3.png"
+                      alt="product"
+                      class="product__img"
+                    />
+                    <h3 class="product__title">Brand name</h3>
+                    <p class="product__info">Zipper Mini Dress</p>
+                    <p class="product__price">$879.00</p>
+                    <button class="product__heart">
+                      <img src="/assets/images/icons/heart.svg" alt="heart" />
+                    </button> </a
+                  ><a
+                    href="/product.html"
+                    class="product product--small swiper-slide"
+                  >
+                    <img
+                      src="/assets/images/home/arrival1.png"
+                      alt="product"
+                      class="product__img"
+                    />
+                    <h3 class="product__title">Brand name</h3>
+                    <p class="product__info">Zipper Mini Dress</p>
+                    <p class="product__price">$879.00</p>
+                    <button class="product__heart">
+                      <img src="/assets/images/icons/heart.svg" alt="heart" />
+                    </button> </a
+                  ><a
+                    href="/product.html"
+                    class="product product--small swiper-slide"
+                  >
+                    <img
+                      src="/assets/images/home/arrival2.png"
+                      alt="product"
+                      class="product__img"
+                    />
+                    <h3 class="product__title">Brand name</h3>
+                    <p class="product__info">Zipper Mini Dress</p>
+                    <p class="product__price">$879.00</p>
+                    <button class="product__heart">
+                      <img src="/assets/images/icons/heart.svg" alt="heart" />
+                    </button>
+                  </a>
+                </div>
+              </div>
+
+              <div class="swiper-button-prev collections__prev-btn"></div>
+              <div class="swiper-button-next collections__next-btn"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
