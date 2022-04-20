@@ -106,7 +106,7 @@
 /* ARRIVALS */
 .arrivals__container {
   padding: 0 var(--app-padding);
-  margin: var(--app-padding) auto;
+  margin-top: var(--app-padding);
 }
 
 .arrivals__main-card {
@@ -180,7 +180,7 @@
   max-width: calc(1140px + var(--app-padding) * 2);
   padding: 0 var(--app-padding);
   display: grid;
-  gap: 20px;
+  gap: 0 20px;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -320,7 +320,7 @@
 
 /* COLLECTION SLIDER */
 .collections-slider__container {
-  max-width: calc(1140px + var(--app-padding) * 2);
+  /* max-width: calc(1140px + var(--app-padding) * 2); */
   padding: 0 var(--app-padding);
 }
 
@@ -397,6 +397,10 @@
   color: var(--c-grey);
 }
 
+.stories__title {
+  margin-bottom: 4rem;
+}
+
 .story__title {
   font-weight: 600;
   font-size: 16px;
@@ -419,7 +423,6 @@
   justify-content: center;
   padding-bottom: 15%;
 }
-
 
 .story__sub {
   font-weight: 300;
