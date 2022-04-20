@@ -95,7 +95,8 @@
 .bseller__link span,
 .arrivals__link span,
 .mission__link span,
-.collections__link span {
+.collections__link span,
+.stories__link span {
   font-weight: 700;
   font-size: 16px;
   line-height: 160%;
@@ -122,7 +123,9 @@
 .arrivals__title,
 .bsellers__title,
 .collections__title,
-.collections-slider__title {
+.collections-slider__title,
+.designers__title,
+.stories__title {
   margin-top: 1.8rem;
   font-weight: 700;
   font-size: 4.8rem;
@@ -224,7 +227,9 @@
 
 .mission__sub,
 .collections__sub,
-.collections-slider__sub {
+.collections-slider__sub,
+.designers__sub,
+.story__sub {
   font-weight: 500;
   font-size: 10px;
   line-height: 170%;
@@ -257,7 +262,8 @@
 }
 
 .collections__header,
-.collections-slider__header {
+.collections-slider__header,
+.designers__header {
   text-align: center;
 }
 
@@ -340,7 +346,106 @@
 }
 
 .collections-slider__next-btn {
-    right: 0;
+  right: 0;
+}
+
+/* DESIGNERS */
+.designers {
+  padding-bottom: 8rem;
+}
+
+.designers__container {
+  padding: 0 var(--app-padding);
+}
+
+.designers__body {
+  margin-top: 3.6rem;
+}
+
+.designer__img {
+  width: 100%;
+  max-width: 330px;
+}
+
+.designer__name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* STORIES */
+.stories {
+  padding: 8rem 0 6.6rem;
+  background-color: var(--c-primary);
+}
+
+.stories__container {
+  padding: 0 var(--app-padding);
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.stories__list {
+  display: contents;
+}
+
+.stories__title,
+.story__title {
+  color: var(--c-grey);
+}
+
+.story__title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+}
+
+.story__img {
+  width: 100%;
+  max-width: 330px;
+}
+
+.stories__header,
+.story {
+  flex: 1;
+}
+
+.stories__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 15%;
+}
+
+
+.story__sub {
+  font-weight: 300;
+}
+
+.story__desc {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  color: #7c7c7c;
+}
+
+.story__link span {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 172%;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.story__text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 16px 0;
 }
 
 @media only screen and (max-width: 1300px) {

@@ -53,3 +53,9 @@ const editorsSlider = new Swiper('.collections-slider__slider', {
   },
   rewind: true,
 });
+
+const desigersSlider = new Swiper('.designers__slider', {
+  grabCursor: true,
+  slidesPerView: 4,
+  spaceBetween: 16,
+});
