@@ -23,3 +23,15 @@ html {
   font-size: 62.5%;
   overflow-x: hidden;
 }
+
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  :root {
+    --app-padding: 3rem;
+  }
+}

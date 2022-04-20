@@ -11,11 +11,11 @@ const arrivalSwiper = new Swiper('.arrivals__list', {
       slidesPerView: 2,
       spaceBetween: 7,
     },
-    700: {
+    701: {
       slidesPerView: 3,
       spaceBetween: 12,
     },
-    1000: {
+    1001: {
       slidesPerView: 4,
       spaceBetween: 16,
     },
@@ -33,8 +33,19 @@ const collectionOptions = {
     fill: 'row',
   },
   slidesPerView: 2,
-  spaceBetween: 40,
+  breakpoints: {
+    0: {
+      spaceBetween: 16,
+    },
+    701: {
+      spaceBetween: 24,
+    },
+    1001: {
+      spaceBetween: 40,
+    },
+  },
 };
+
 const newinSwiper = new Swiper(
   '.newin .collections__products-container',
   collectionOptions,
@@ -46,16 +57,42 @@ const seasonalSwiper = new Swiper(
 
 const editorsSlider = new Swiper('.collections-slider__slider', {
   grabCursor: true,
-  slidesPerView: 4,
   spaceBetween: 16,
   navigation: {
     nextEl: '.collections-slider__next-btn',
   },
   rewind: true,
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
+    },
+    701: {
+      slidesPerView: 3,
+    },
+    1001: {
+      slidesPerView: 4,
+    },
+  },
 });
 
 const desigersSlider = new Swiper('.designers__slider', {
   grabCursor: true,
-  slidesPerView: 4,
-  spaceBetween: 16,
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
+      spaceBetween: 7,
+    },
+    701: {
+      slidesPerView: 3,
+      spaceBetween: 12,
+    },
+    1001: {
+      slidesPerView: 4,
+      spaceBetween: 16,
+    },
+  },
+  navigation: {
+    nextEl: '.designers__next-btn',
+    prevEl: '.designers__prev-btn',
+  },
 });
