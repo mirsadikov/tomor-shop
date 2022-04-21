@@ -275,6 +275,7 @@
 .collections__body {
   margin-top: 4.8rem;
   display: flex;
+  align-items: center;
 }
 
 .collections__ad {
@@ -344,10 +345,17 @@
 .collections-slide__img {
   width: 100%;
   display: block;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
 }
 
 .collections-slider__next-btn {
   right: 0;
+}
+.collections-slider__prev-btn {
+  left: 0;
+  display: none;
 }
 
 /* DESIGNERS */
@@ -508,10 +516,10 @@
     padding: 5rem 1rem 7rem;
   }
 
-  .collections__products .swiper-button-next {
+  .collections__next-btn {
     right: 10px;
   }
-  .collections__products .swiper-button-prev {
+  .collections__prev-btn {
     left: 10px;
   }
 
@@ -602,5 +610,238 @@
   .designers__prev-btn,
   .designers__next-btn {
     display: flex;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .hero__container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+
+  .hero__rich-text {
+    order: 1;
+  }
+
+  .hero__title {
+    font-size: 5.4rem;
+  }
+
+  .bsellers__header {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  .bseller2 {
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+  .bsellers__title {
+    margin-bottom: 3rem;
+  }
+
+  .hero__sub,
+  .arrivals__sub,
+  .bsellers__sub {
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+  }
+
+  .bseller__title {
+    font-size: 2.4rem;
+  }
+
+  .hero__link span,
+  .bseller__link span,
+  .arrivals__link span,
+  .mission__link span,
+  .collections__link span,
+  .stories__link span {
+    font-size: 14px;
+    margin-right: 6px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .collections-slider__slider .swiper-slide:nth-child(1) {
+    width: 100% !important;
+    height: auto;
+  }
+
+  .arrivals__main-card {
+    padding: 7rem 1rem 9rem;
+  }
+
+  .mission__text {
+    margin-bottom: 4rem;
+  }
+
+  .stories__list {
+    flex-wrap: wrap;
+  }
+
+  .story {
+    flex-basis: 240px;
+    max-width: 400px;
+  }
+
+  .story:last-child {
+    max-width: calc(50% - 1rem);
+    margin: 0 auto;
+    margin-top: 3rem;
+  }
+
+  .bsellers__container {
+    display: block;
+  }
+
+  .bseller {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+
+  .bseller__bottom {
+    margin-top: 8px;
+  }
+
+  .collections__ad {
+    width: 55%;
+  }
+  .collections__products {
+    width: 45%;
+  }
+
+  .collections__products-container {
+    max-width: 20rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .hero__title {
+    font-size: 40px;
+  }
+
+  .arrivals__main-card {
+    padding: 5rem 1rem 3rem;
+    max-height: 420px;
+    max-width: 50%;
+  }
+
+  .arrivals__title {
+    font-size: 27px;
+  }
+
+  .arrivals__info {
+    margin: 18px 0 0;
+  }
+  .product__info {
+    overflow: hidden;
+    height: 24px;
+    text-overflow: ellipsis;
+  }
+
+  .stories__list {
+    display: block;
+  }
+
+  .story {
+    margin: 0 auto;
+  }
+
+  .story__img {
+    margin: 3rem auto 0;
+    display: block;
+  }
+
+  .story:last-child {
+    max-width: max-content;
+    margin: 0 auto;
+    margin-top: 3rem;
+  }
+
+  .story__img {
+    max-width: 350px;
+  }
+
+  .hero__sub,
+  .arrivals__sub,
+  .bsellers__sub {
+    font-size: 2rem;
+  }
+
+  .mission {
+    padding-left: 0;
+  }
+
+  .mission__text {
+    font-size: 20px;
+  }
+
+  .arrivals__next-btn,
+  .collections__next-btn,
+  .collections__prev-btn {
+    width: 24px;
+    height: 24px;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    transform: scale(0.6);
+  }
+
+  .designers__prev-btn,
+  .collections-slider__prev-btn {
+    left: -12px;
+    display: flex;
+  }
+
+  .designers__next-btn,
+  .collections-slider__next-btn {
+    right: -12px;
+  }
+
+  .collections__body {
+    display: block;
+  }
+
+  .collections__ad {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    padding-top: 100%;
+    position: relative;
+    margin-bottom: 16px;
+  }
+
+  .collections__img {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    max-width: 100%;
+  }
+  .collections__products {
+    width: 100%;
+    padding: 0;
+  }
+
+  .collections__link {
+    display: none;
+  }
+
+  .collections__products-container {
+    max-width: max-content;
+  }
+
+  .collections__prev-btn {
+    left: 0;
+  }
+  .collections__next-btn {
+    right: 0;
   }
 }

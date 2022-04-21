@@ -37,6 +37,7 @@
 
 .product__img {
   width: 100%;
+  object-fit: contain;
   height: auto;
 }
 
@@ -56,5 +57,12 @@
 @media only screen and (max-width: 1000px) {
   .product {
     padding-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .product {
+    padding-bottom: 0.5rem;
+    max-width: none;
   }
 }

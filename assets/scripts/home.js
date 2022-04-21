@@ -28,20 +28,33 @@ const collectionOptions = {
     nextEl: '.collections__next-btn',
     prevEl: '.collections__prev-btn',
   },
-  grid: {
-    rows: 2,
-    fill: 'row',
-  },
-  slidesPerView: 2,
+
   breakpoints: {
     0: {
       spaceBetween: 16,
+      slidesPerView: 2,
+    },
+    551: {
+      grid: {
+        rows: 2,
+        fill: 'row',
+      },
     },
     701: {
+      slidesPerView: 2,
       spaceBetween: 24,
+      grid: {
+        rows: 2,
+        fill: 'row',
+      },
     },
     1001: {
+      slidesPerView: 2,
       spaceBetween: 40,
+      grid: {
+        rows: 2,
+        fill: 'row',
+      },
     },
   },
 };
@@ -60,16 +73,19 @@ const editorsSlider = new Swiper('.collections-slider__slider', {
   spaceBetween: 16,
   navigation: {
     nextEl: '.collections-slider__next-btn',
+    prevEl: '.collections-slider__prev-btn',
   },
-  rewind: true,
   breakpoints: {
     0: {
       slidesPerView: 2,
+      rewind: false,
     },
     701: {
+      rewind: true,
       slidesPerView: 3,
     },
     1001: {
+      rewind: true,
       slidesPerView: 4,
     },
   },
