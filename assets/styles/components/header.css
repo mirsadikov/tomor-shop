@@ -150,6 +150,10 @@
   transform: rotateZ(-45deg);
 }
 
+.header__nav-toggle-checkbox:checked ~ .header__nav-toggole-label {
+  position: fixed;
+}
+
 @media screen and (max-width: 950px) {
   .header__container {
     justify-content: space-between;

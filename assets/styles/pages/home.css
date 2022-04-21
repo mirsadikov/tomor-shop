@@ -280,6 +280,9 @@
 
 .collections__ad {
   width: 45%;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
 }
 
 .collections--reverse .collections__ad {
@@ -294,6 +297,8 @@
   margin-bottom: 16px;
   width: 100%;
   max-width: 438px;
+  flex: 1;
+  object-fit: cover;
 }
 
 .collections__products {
@@ -731,7 +736,7 @@
   }
 
   .arrivals__title {
-    font-size: 27px;
+    font-size: 3.5rem;
   }
 
   .arrivals__info {
@@ -809,8 +814,6 @@
 
   .collections__ad {
     width: 100%;
-    display: flex;
-    flex-direction: column;
     align-items: center !important;
     padding-top: 100%;
     position: relative;
