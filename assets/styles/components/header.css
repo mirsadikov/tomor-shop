@@ -154,6 +154,10 @@
   position: fixed;
 }
 
+.header__nav-toggle-checkbox:checked ~ .header__icon-link--mobile {
+  margin-left: auto !important;
+}
+
 @media screen and (max-width: 950px) {
   .header__container {
     justify-content: space-between;

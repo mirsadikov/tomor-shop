@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/assets/styles/shop.css" />
+    <script>
+      const appHeight = () => {
+        const doc = document.documentElement;
+        doc.style.setProperty('--app-height', `${window.innerHeight}px`);
+      };
+      window.addEventListener('resize', appHeight);
+      appHeight();
+    </script>
+    <script type="module" src="/assets/scripts/shop.js"></script>
+    <title>TOMOR</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <input
+          type="checkbox"
+          name="nav"
+          id="nav-checkbox"
+          class="header__nav-toggle-checkbox"
+          autocomplete="off"
+        />
+        <label for="nav-checkbox" class="header__nav-toggole-label">
+          <div class="header__hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </label>
+        <a href="/cart.html" class="header__icon-link header__icon-link--mobile"
+          ><img
+            src="/assets/images/icons/bag.svg"
+            alt="bag"
+            class="header__icon"
+        /></a>
+        <a href="/" class="header__logo-link">
+          <img
+            src="/assets/images/logo.svg"
+            alt="TOMOR LOGO"
+            class="header__logo"
+          />
+        </a>
+        <div class="header__header">
+          <div class="header__top">
+            <div class="header__search">
+              <input
+                type="text"
+                class="header__search-input"
+                placeholder="search"
+              />
+              <button class="header__search-btn">
+                <img src="/assets/images/icons/magnifier.svg" alt="magnifier" />
+              </button>
+            </div>
+
+            <div class="header__icons">
+              <a href="#" class="header__icon-link"
+                ><img
+                  src="/assets/images/icons/profile.svg"
+                  alt="profile"
+                  class="header__icon"
+              /></a>
+              <a href="#" class="header__icon-link"
+                ><img
+                  src="/assets/images/icons/heart.svg"
+                  alt="heart"
+                  class="header__icon"
+              /></a>
+              <a href="/cart.html" class="header__icon-link"
+                ><img
+                  src="/assets/images/icons/bag.svg"
+                  alt="bag"
+                  class="header__icon"
+              /></a>
+            </div>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__nav-links">
+              <li class="header__nav-link">
+                <a href="#" class="header__nav-link-href">New</a>
+              </li>
+              <li class="header__nav-link">
+                <a href="#" class="header__nav-link-href">Designers</a>
+              </li>
+              <li class="header__nav-link">
+                <a href="#" class="header__nav-link-href">Clothes</a>
+              </li>
+              <li class="header__nav-link">
+                <a href="#" class="header__nav-link-href">Shoes</a>
+              </li>
+              <li class="header__nav-link">
+                <a href="#" class="header__nav-link-href">Accessories</a>
+              </li>
+              <li class="header__nav-link">
+                <a href="#" class="header__nav-link-href">Bags</a>
+              </li>
+              <li class="header__nav-link">
+                <a href="#" class="header__nav-link-href">Jewelry</a>
+              </li>
+              <li class="header__nav-link">
+                <a href="#" class="header__nav-link-href">Beauty</a>
+              </li>
+              <li class="header__nav-link">
+                <a href="#" class="header__nav-link-href">Editorial</a>
+              </li>
+              <li class="header__nav-link">
+                <a href="#" class="header__nav-link-href">Sale</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+      <section class="hero">
+        <div class="hero__container container">
+          <img
+            src="/assets/images/plp/hero.png"
+            alt="hero img"
+            class="hero__img"
+          />
+          <h1 class="hero__title">Gucci</h1>
+          <p class="hero__text">
+            Under the new vision of creative director Alessandro Michele, the
+            House has redefined luxury for the 21st century, further reinforcing
+            its position as one of the world’s most desirable fashion houses.
+          </p>
+        </div>
+      </section>
+
+      <!-- FILTER -->
+      <section class="filter">
+        <div class="filter__container container">
+          <div class="filter__dropdowns">
+            <div class="filter__dropdown">
+              <img
+                src="/assets/images/icons/people.svg"
+                alt="people"
+                class="filter__dropdown-icon"
+              />
+              <span class="filter__dropdown-name">People</span>
+            </div>
+            <div class="filter__dropdown">
+              <img
+                src="/assets/images/icons/tree.svg"
+                alt="tree"
+                class="filter__dropdown-icon"
+              />
+              <span class="filter__dropdown-name">Environment</span>
+            </div>
+            <div class="filter__dropdown">
+              <img
+                src="/assets/images/icons/bird.svg"
+                alt="bird"
+                class="filter__dropdown-icon"
+              />
+              <span class="filter__dropdown-name">Animal</span>
+            </div>
+          </div>
+
+          <div class="filter__buttons">
+            <button class="filter__button filter__filter-btn">
+              <span class="filter__button-text">Filter</span>
+            </button>
+            <button class="filter__button filter__sort-btn">
+              <span class="filter__button-text">Sort by</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- BODY -->
+      <section class="content">
+        <div class="content__container container">
+          <!-- ACCORDIONS -->
+          <aside class="accordions">
+            <div class="accordion">
+              <button class="accordion__title">Categories</button>
+              <div class="accordion__body">
+                <ul class="accordion__items">
+                  <li class="accordion__item">
+                    <a href="#" class="accordion__link">New</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a href="#" class="accordion__link">Clothes</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a href="#" class="accordion__link">Shoes</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a href="#" class="accordion__link">Accessories</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a href="#" class="accordion__link">Bags</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a href="#" class="accordion__link">Jewelry</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a href="#" class="accordion__link">Beauty</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a href="#" class="accordion__link">Sale</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion">
+              <button class="accordion__title">Color</button>
+              <div class="accordion__body">
+                <ul class="accordion__items">
+                  <li class="accordion__item">
+                    <a href="#" class="accordion__link">Red</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a href="#" class="accordion__link">Black</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a href="#" class="accordion__link">Blue</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a href="#" class="accordion__link">Pink</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a href="#" class="accordion__link">White</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a href="#" class="accordion__link">Yellow</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion">
+              <button class="accordion__title">Size</button>
+              <div class="accordion__body">
+                <ul class="accordion__items">
+                  <li class="accordion__item">
+                    <a href="#" class="accordion__link">Small</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a href="#" class="accordion__link">Medium</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a href="#" class="accordion__link">Large</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion">
+              <button class="accordion__title">Designer</button>
+              <div class="accordion__body">
+                <ul class="accordion__items">
+                  <li class="accordion__item">
+                    <a href="#" class="accordion__link">Alexander Wang</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a href="#" class="accordion__link">Stella McCartney</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a href="#" class="accordion__link">Chloe</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a href="#" class="accordion__link">Mark Jameson</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion">
+              <button class="accordion__title">Sustainable brands</button>
+              <div class="accordion__body">
+                <ul class="accordion__items">
+                  <li class="accordion__item">
+                    <a href="#" class="accordion__link">Gucci</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a href="#" class="accordion__link">Polo</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a href="#" class="accordion__link">Loro Piano</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a href="#" class="accordion__link">Louren</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion">
+              <button class="accordion__title">Sustainability</button>
+              <div class="accordion__body">
+                <ul class="accordion__items">
+                  <li class="accordion__item">
+                    <a href="#" class="accordion__link">Easy</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a href="#" class="accordion__link">Normal</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a href="#" class="accordion__link">Hard</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion">
+              <button class="accordion__title">Price</button>
+              <div class="accordion__body">
+                <ul class="accordion__items">
+                  <li class="accordion__item">
+                    <a href="#" class="accordion__link">Lower</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a href="#" class="accordion__link">100-200</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a href="#" class="accordion__link">200-400</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a href="#" class="accordion__link">400-1000</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a href="#" class="accordion__link">1000-2000</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a href="#" class="accordion__link">Higher</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </aside>
+
+          <!-- PRODUCTS -->
+          <div class="products">
+            <div class="product">
+              <img
+                src="/assets/images/home/arrival1.png"
+                alt="product"
+                class="product__img"
+              />
+              <span class="product__state">New</span>
+              <div class="product__icons">
+                <img
+                  src="/assets/images/icons/recycle.svg"
+                  alt="recycle"
+                  class="product__icon"
+                />
+                <img
+                  src="/assets/images/icons/leaf.svg"
+                  alt="leaf"
+                  class="product__icon"
+                />
+                <img
+                  src="/assets/images/icons/rabbit.svg"
+                  alt="rabbit"
+                  class="product__icon"
+                />
+              </div>
+              <h3 class="product__title">Gucci</h3>
+              <p class="product__info">Zipper Mini Dress</p>
+              <p class="product__price">$879.00</p>
+              <div class="product__colors">
+                <input
+                  type="radio"
+                  name="product1"
+                  class="product__color product__color--white"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="product1"
+                  class="product__color product__color--black"
+                />
+                <input
+                  type="radio"
+                  name="product1"
+                  class="product__color product__color--red"
+                />
+              </div>
+              <button class="product__heart">
+                <img src="/assets/images/icons/heart-solid.svg" alt="heart" />
+              </button>
+            </div>
+
+            <div class="product">
+              <img
+                src="/assets/images/home/arrival2.png"
+                alt="product"
+                class="product__img"
+              />
+              <span class="product__state">New</span>
+              <div class="product__icons">
+                <img
+                  src="/assets/images/icons/recycle.svg"
+                  alt="recycle"
+                  class="product__icon"
+                />
+                <img
+                  src="/assets/images/icons/leaf.svg"
+                  alt="leaf"
+                  class="product__icon"
+                />
+              </div>
+              <h3 class="product__title">Alexander wang</h3>
+              <p class="product__info">Mix Pattern Leather Jacket</p>
+              <p class="product__price">$879.00</p>
+              <div class="product__colors">
+                <input
+                  type="radio"
+                  name="product2"
+                  class="product__color product__color--white"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="product2"
+                  class="product__color product__color--black"
+                />
+                <input
+                  type="radio"
+                  name="product2"
+                  class="product__color product__color--red"
+                />
+              </div>
+              <button class="product__heart">
+                <img src="/assets/images/icons/heart.svg" alt="heart" />
+              </button>
+            </div>
+
+            <div class="product">
+              <img
+                src="/assets/images/home/arrival3.png"
+                alt="product"
+                class="product__img"
+              />
+              <span class="product__state">New</span>
+              <div class="product__icons">
+                <img
+                  src="/assets/images/icons/recycle.svg"
+                  alt="recycle"
+                  class="product__icon"
+                />
+                <img
+                  src="/assets/images/icons/leaf.svg"
+                  alt="leaf"
+                  class="product__icon"
+                />
+                <img
+                  src="/assets/images/icons/rabbit.svg"
+                  alt="rabbit"
+                  class="product__icon"
+                />
+              </div>
+              <h3 class="product__title">Gucci</h3>
+              <p class="product__info">Zipper Mini Dress</p>
+              <p class="product__price">$879.00</p>
+              <div class="product__colors">
+                <input
+                  type="radio"
+                  class="product__color product__color--white"
+                  checked
+                  name="product3"
+                />
+                <input
+                  type="radio"
+                  class="product__color product__color--black"
+                  name="product3"
+                />
+                <input
+                  type="radio"
+                  class="product__color product__color--red"
+                  name="product3"
+                />
+              </div>
+              <button class="product__heart">
+                <img src="/assets/images/icons/heart.svg" alt="heart" />
+              </button>
+            </div>
+
+            <div class="product">
+              <img
+                src="/assets/images/home/arrival1.png"
+                alt="product"
+                class="product__img"
+              />
+              <div class="product__icons">
+                <img
+                  src="/assets/images/icons/rabbit.svg"
+                  alt="rabbit"
+                  class="product__icon"
+                />
+              </div>
+              <h3 class="product__title">Alexander wang</h3>
+              <p class="product__info">Mix Pattern Leather Jacket</p>
+              <p class="product__price">$879.00</p>
+              <div class="product__colors">
+                <input
+                  type="radio"
+                  class="product__color product__color--white"
+                  checked
+                  name="product4"
+                />
+                <input
+                  type="radio"
+                  class="product__color product__color--black"
+                  name="product4"
+                />
+                <input
+                  type="radio"
+                  class="product__color product__color--red"
+                  name="product4"
+                />
+              </div>
+              <button class="product__heart">
+                <img src="/assets/images/icons/heart-solid.svg" alt="heart" />
+              </button>
+            </div>
+
+            <div class="product">
+              <img
+                src="/assets/images/home/arrival2.png"
+                alt="product"
+                class="product__img"
+              />
+              <h3 class="product__title">Alexander wang</h3>
+              <p class="product__info">Mix Pattern Leather Jacket</p>
+              <p class="product__price">$879.00</p>
+              <div class="product__colors">
+                <input
+                  type="radio"
+                  class="product__color product__color--white"
+                  checked
+                  name="product5"
+                />
+                <input
+                  type="radio"
+                  class="product__color product__color--black"
+                  name="product5"
+                />
+                <input
+                  type="radio"
+                  class="product__color product__color--red"
+                  name="product5"
+                />
+              </div>
+              <button class="product__heart">
+                <img src="/assets/images/icons/heart.svg" alt="heart" />
+              </button>
+            </div>
+
+            <div class="product">
+              <img
+                src="/assets/images/home/arrival3.png"
+                alt="product"
+                class="product__img"
+              />
+              <span class="product__state product__state--red">Sale</span>
+              <h3 class="product__title">Gucci</h3>
+              <p class="product__info">Zipper Mini Dress</p>
+              <p class="product__price">$879.00</p>
+              <div class="product__colors">
+                <input
+                  type="radio"
+                  class="product__color product__color--white"
+                  checked
+                  name="product6"
+                />
+                <input
+                  type="radio"
+                  class="product__color product__color--black"
+                  name="product6"
+                />
+                <input
+                  type="radio"
+                  class="product__color product__color--red"
+                  name="product6"
+                />
+              </div>
+              <button class="product__heart">
+                <img src="/assets/images/icons/heart.svg" alt="heart" />
+              </button>
+            </div>
+          </div>
+
+          <!-- SORT -->
+          <div class="sorting">
+            <div class="sorting__buttons">
+              <button class="sorting__button">Name</button>
+              <button class="sorting__button">Price</button>
+              <button class="sorting__button">Color</button>
+              <button class="sorting__button">Size</button>
+              <button class="sorting__button">Year</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pagination">
+        <div class="pagination__container container">
+          <div class="pagination__buttons">
+            <button class="pagination__btn pagination__btn-active">1</button>
+            <button class="pagination__btn">2</button>
+            <button class="pagination__btn">3</button>
+            <button class="pagination__btn">4</button>
+            <button class="pagination__btn">5</button>
+            <button class="pagination__btn">
+              <img
+                src="/assets/images/icons/chevron-right.svg"
+                alt="chevron right"
+              />
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__content">
+          <div class="footer__title">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+          </div>
+          <div class="footer__newletter">
+            <div class="footer__sub">Sign up for toward updates</div>
+            <p class="footer__newletter-info">
+              Receiving our newsletter with access to our latest collections,
+              events and news.
+            </p>
+            <form class="footer__form">
+              <input
+                type="email"
+                class="footer__input"
+                placeholder="Email Address"
+              />
+              <button class="footer__button">
+                <img
+                  src="/assets/images/icons/arrow-right-long-white.svg"
+                  alt="arrow"
+                />
+              </button>
+            </form>
+            <div class="footer__socials">
+              <a href="#" class="footer__social"
+                ><img src="/assets/images/icons/instagram.svg" alt="instagram"
+              /></a>
+              <a href="#" class="footer__social"
+                ><img src="/assets/images/icons/facebook.svg" alt="facebook"
+              /></a>
+            </div>
+          </div>
+          <div class="footer__links-container">
+            <div class="footer__links-column">
+              <div class="footer__sub">Customer Care</div>
+              <ul class="footer__links">
+                <li class="footer__link">
+                  <a href="#" class="footer__href">FAQ</a>
+                </li>
+                <li class="footer__link">
+                  <a href="#" class="footer__href">Shipping & Returns</a>
+                </li>
+                <li class="footer__link">
+                  <a href="#" class="footer__href">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__links-column">
+              <div class="footer__sub">Company</div>
+              <ul class="footer__links">
+                <li class="footer__link">
+                  <a href="#" class="footer__href">About Us</a>
+                </li>
+                <li class="footer__link">
+                  <a href="#" class="footer__href">Journal</a>
+                </li>
+                <li class="footer__link">
+                  <a href="#" class="footer__href">Press</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="footer__bottom">&copy; 2021 Toward Brand</p>
+      </div>
+    </footer>
+  </body>
+</html>
