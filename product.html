@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/assets/styles/product.css" />
+    <script>
+      const appHeight = () => {
+        const doc = document.documentElement;
+        doc.style.setProperty('--app-height', `${window.innerHeight}px`);
+      };
+      window.addEventListener('resize', appHeight);
+      appHeight();
+    </script>
+    <script type="module" src="/assets/scripts/product.js"></script>
+    <title>TOMOR</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <input
+          type="checkbox"
+          name="nav"
+          id="nav-checkbox"
+          class="header__nav-toggle-checkbox"
+          autocomplete="off"
+        />
+        <label for="nav-checkbox" class="header__nav-toggole-label">
+          <div class="header__hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </label>
+        <a href="/cart.html" class="header__icon-link header__icon-link--mobile"
+          ><img
+            src="/assets/images/icons/bag.svg"
+            alt="bag"
+            class="header__icon"
+        /></a>
+        <a href="/" class="header__logo-link">
+          <img
+            src="/assets/images/logo.svg"
+            alt="TOMOR LOGO"
+            class="header__logo"
+          />
+        </a>
+        <div class="header__header">
+          <div class="header__top">
+            <div class="header__search">
+              <input
+                type="text"
+                class="header__search-input"
+                placeholder="search"
+              />
+              <button class="header__search-btn">
+                <img src="/assets/images/icons/magnifier.svg" alt="magnifier" />
+              </button>
+            </div>
+
+            <div class="header__icons">
+              <a href="#" class="header__icon-link"
+                ><img
+                  src="/assets/images/icons/profile.svg"
+                  alt="profile"
+                  class="header__icon"
+              /></a>
+              <a href="#" class="header__icon-link"
+                ><img
+                  src="/assets/images/icons/heart.svg"
+                  alt="heart"
+                  class="header__icon"
+              /></a>
+              <a href="/cart.html" class="header__icon-link"
+                ><img
+                  src="/assets/images/icons/bag.svg"
+                  alt="bag"
+                  class="header__icon"
+              /></a>
+            </div>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__nav-links">
+              <li class="header__nav-link">
+                <a href="#" class="header__nav-link-href">New</a>
+              </li>
+              <li class="header__nav-link">
+                <a href="#" class="header__nav-link-href">Designers</a>
+              </li>
+              <li class="header__nav-link">
+                <a href="#" class="header__nav-link-href">Clothes</a>
+              </li>
+              <li class="header__nav-link">
+                <a href="#" class="header__nav-link-href">Shoes</a>
+              </li>
+              <li class="header__nav-link">
+                <a href="#" class="header__nav-link-href">Accessories</a>
+              </li>
+              <li class="header__nav-link">
+                <a href="#" class="header__nav-link-href">Bags</a>
+              </li>
+              <li class="header__nav-link">
+                <a href="#" class="header__nav-link-href">Jewelry</a>
+              </li>
+              <li class="header__nav-link">
+                <a href="#" class="header__nav-link-href">Beauty</a>
+              </li>
+              <li class="header__nav-link">
+                <a href="#" class="header__nav-link-href">Editorial</a>
+              </li>
+              <li class="header__nav-link">
+                <a href="#" class="header__nav-link-href">Sale</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero__container container">
+          <div class="hero__slider-container">
+            <div class="hero__thumbs-container">
+              <div class="hero__thumbs swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide hero__thumb">
+                    <img
+                      src="/assets/images/pdp/thumb.png"
+                      alt="thumb"
+                      class="hero__thumb-img"
+                    />
+                  </div>
+                  <div class="swiper-slide hero__thumb">
+                    <img
+                      src="/assets/images/pdp/thumb.png"
+                      alt="thumb"
+                      class="hero__thumb-img"
+                    />
+                  </div>
+                  <div class="swiper-slide hero__thumb">
+                    <img
+                      src="/assets/images/pdp/thumb.png"
+                      alt="thumb"
+                      class="hero__thumb-img"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero__images-container">
+              <div class="hero__images swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide hero__image">
+                    <img
+                      src="/assets/images/pdp/product.png"
+                      alt="image"
+                      class="hero__image-img"
+                    />
+                  </div>
+                  <div class="swiper-slide hero__image">
+                    <img
+                      src="/assets/images/pdp/product.png"
+                      alt="image"
+                      class="hero__image-img"
+                    />
+                  </div>
+                  <div class="swiper-slide hero__image">
+                    <img
+                      src="/assets/images/pdp/product.png"
+                      alt="image"
+                      class="hero__image-img"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-button-next hero__next-btn"></div>
+                <div class="swiper-button-prev hero__prev-btn"></div>
+              </div>
+            </div>
+          </div>
+          <div class="hero__meta">
+            <h1 class="hero__title">Alexander wang</h1>
+            <p class="hero__name">
+              <span>Zipper Mini Dress</span>
+              <img
+                src="/assets/images/icons/heart.svg"
+                alt="heart"
+                class="hero__icon"
+              />
+            </p>
+            <p class="hero__price">$879.00</p>
+            <p class="hero__model">TW-29382-2</p>
+            <p class="hero__payment-info">
+              <span>Pay as low as $49/mo <a href="#">Learn More</a></span>
+            </p>
+            <select
+              name="size"
+              id="size"
+              class="hero__select"
+              autocomplete="off"
+            >
+              <option value="0" disabled selected>Select Size</option>
+              <option value="1">small</option>
+              <option value="2">normal</option>
+              <option value="3">large</option>
+            </select>
+            <a href="#" class="hero__size-guide">Size guide</a>
+            <p class="hero__color-text">Color : White</p>
+            <div class="hero__colors">
+              <input
+                type="radio"
+                name="pair1"
+                class="product__color product__color--white"
+                checked
+              />
+              <input
+                type="radio"
+                name="pair1"
+                class="product__color product__color--black"
+              />
+              <input
+                type="radio"
+                name="pair1"
+                class="product__color product__color--red"
+              />
+            </div>
+            <button class="hero__button">Add to Bag</button>
+            <div class="hero__tabs-container">
+              <div class="hero__tabs">
+                <div class="hero__tab hero__tab--active">Description</div>
+                <div class="hero__tab">Detail</div>
+                <div class="hero__tab">Shipping & Return</div>
+                <div class="hero__tab">The Brand</div>
+              </div>
+            </div>
+
+            <p class="hero__product-info">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+
+            <div class="hero__sustainability">
+              <h4 class="hero__sustainability-title">Sustainability</h4>
+              <p class="hero__sustainability-text">
+                Made with 100% sustainable materials.
+                <a href="#" class="hero__link">Learn More</a>
+              </p>
+
+              <div class="hero__sustainability-icons">
+                <div class="hero__sustainability-icon">
+                  <img
+                    src="/assets/images/icons/rabbit.svg"
+                    alt="eco-friendly"
+                    class="hero__sustainability-icon-img"
+                  />
+                  <p class="hero__sustainability-icon-text">Cruelty-free</p>
+                </div>
+                <div class="hero__sustainability-icon">
+                  <img
+                    src="/assets/images/icons/recycle.svg"
+                    alt="eco-friendly"
+                    class="hero__sustainability-icon-img"
+                  />
+                  <p class="hero__sustainability-icon-text">Recycled</p>
+                </div>
+                <div class="hero__sustainability-icon">
+                  <img
+                    src="/assets/images/icons/leaf.svg"
+                    alt="eco-friendly"
+                    class="hero__sustainability-icon-img"
+                  />
+                  <p class="hero__sustainability-icon-text">Vegan</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pairing -->
+      <section class="pair">
+        <div class="pair__container container">
+          <h2 class="pair__title">Pair It With</h2>
+          <div class="pair__list swiper">
+            <div class="swiper-wrapper">
+              <div class="product swiper-slide">
+                <img
+                  src="/assets/images/home/arrival3.png"
+                  alt="product"
+                  class="product__img"
+                />
+                <h3 class="product__title">Brand name</h3>
+                <p class="product__info">Product Name</p>
+                <p class="product__price">$879.00</p>
+                <div class="product__colors">
+                  <input
+                    type="radio"
+                    name="pair1"
+                    class="product__color product__color--white"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="pair1"
+                    class="product__color product__color--black"
+                  />
+                  <input
+                    type="radio"
+                    name="pair1"
+                    class="product__color product__color--red"
+                  />
+                </div>
+                <button class="product__heart">
+                  <img src="/assets/images/icons/heart.svg" alt="heart" />
+                </button>
+              </div>
+
+              <div class="product swiper-slide">
+                <img
+                  src="/assets/images/home/arrival3.png"
+                  alt="product"
+                  class="product__img"
+                />
+                <h3 class="product__title">Brand name</h3>
+                <p class="product__info">Product Name</p>
+                <p class="product__price">$879.00</p>
+                <div class="product__colors">
+                  <input
+                    type="radio"
+                    name="pair2"
+                    class="product__color product__color--white"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="pair2"
+                    class="product__color product__color--black"
+                  />
+                  <input
+                    type="radio"
+                    name="pair2"
+                    class="product__color product__color--red"
+                  />
+                </div>
+                <button class="product__heart">
+                  <img src="/assets/images/icons/heart.svg" alt="heart" />
+                </button>
+              </div>
+
+              <div class="product swiper-slide">
+                <img
+                  src="/assets/images/home/arrival3.png"
+                  alt="product"
+                  class="product__img"
+                />
+                <h3 class="product__title">Brand name</h3>
+                <p class="product__info">Product Name</p>
+                <p class="product__price">$879.00</p>
+                <div class="product__colors">
+                  <input
+                    type="radio"
+                    name="pair3"
+                    class="product__color product__color--white"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="pair3"
+                    class="product__color product__color--black"
+                  />
+                  <input
+                    type="radio"
+                    name="pair3"
+                    class="product__color product__color--red"
+                  />
+                </div>
+                <button class="product__heart">
+                  <img src="/assets/images/icons/heart.svg" alt="heart" />
+                </button>
+              </div>
+
+              <div class="product swiper-slide">
+                <img
+                  src="/assets/images/home/arrival3.png"
+                  alt="product"
+                  class="product__img"
+                />
+                <h3 class="product__title">Brand name</h3>
+                <p class="product__info">Product Name</p>
+                <p class="product__price">$879.00</p>
+                <div class="product__colors">
+                  <input
+                    type="radio"
+                    name="pair4"
+                    class="product__color product__color--white"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="pair4"
+                    class="product__color product__color--black"
+                  />
+                  <input
+                    type="radio"
+                    name="pair4"
+                    class="product__color product__color--red"
+                  />
+                </div>
+                <button class="product__heart">
+                  <img src="/assets/images/icons/heart.svg" alt="heart" />
+                </button>
+              </div>
+
+              <div class="product swiper-slide">
+                <img
+                  src="/assets/images/home/arrival3.png"
+                  alt="product"
+                  class="product__img"
+                />
+                <h3 class="product__title">Brand name</h3>
+                <p class="product__info">Product Name</p>
+                <p class="product__price">$879.00</p>
+                <div class="product__colors">
+                  <input
+                    type="radio"
+                    name="pair5"
+                    class="product__color product__color--white"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="pair5"
+                    class="product__color product__color--black"
+                  />
+                  <input
+                    type="radio"
+                    name="pair5"
+                    class="product__color product__color--red"
+                  />
+                </div>
+                <button class="product__heart">
+                  <img src="/assets/images/icons/heart.svg" alt="heart" />
+                </button>
+              </div>
+            </div>
+            <div class="swiper-button-next pair__next-btn"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Additional -->
+      <section class="additional">
+        <div class="additional__container container">
+          <h2 class="additional__title">You May Also Like</h2>
+          <div class="additional__list swiper">
+            <div class="swiper-wrapper">
+              <div class="product swiper-slide">
+                <img
+                  src="/assets/images/home/arrival3.png"
+                  alt="product"
+                  class="product__img"
+                />
+                <h3 class="product__title">Brand name</h3>
+                <p class="product__info">Product Name</p>
+                <p class="product__price">$879.00</p>
+                <div class="product__colors">
+                  <input
+                    type="radio"
+                    name="additional1"
+                    class="product__color product__color--white"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="additional1"
+                    class="product__color product__color--black"
+                  />
+                  <input
+                    type="radio"
+                    name="additional1"
+                    class="product__color product__color--red"
+                  />
+                </div>
+                <button class="product__heart">
+                  <img src="/assets/images/icons/heart.svg" alt="heart" />
+                </button>
+              </div>
+
+              <div class="product swiper-slide">
+                <img
+                  src="/assets/images/home/arrival3.png"
+                  alt="product"
+                  class="product__img"
+                />
+                <h3 class="product__title">Brand name</h3>
+                <p class="product__info">Product Name</p>
+                <p class="product__price">$879.00</p>
+                <div class="product__colors">
+                  <input
+                    type="radio"
+                    name="additional2"
+                    class="product__color product__color--white"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="additional2"
+                    class="product__color product__color--black"
+                  />
+                  <input
+                    type="radio"
+                    name="additional2"
+                    class="product__color product__color--red"
+                  />
+                </div>
+                <button class="product__heart">
+                  <img src="/assets/images/icons/heart.svg" alt="heart" />
+                </button>
+              </div>
+
+              <div class="product swiper-slide">
+                <img
+                  src="/assets/images/home/arrival3.png"
+                  alt="product"
+                  class="product__img"
+                />
+                <h3 class="product__title">Brand name</h3>
+                <p class="product__info">Product Name</p>
+                <p class="product__price">$879.00</p>
+                <div class="product__colors">
+                  <input
+                    type="radio"
+                    name="additional3"
+                    class="product__color product__color--white"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="additional3"
+                    class="product__color product__color--black"
+                  />
+                  <input
+                    type="radio"
+                    name="additional3"
+                    class="product__color product__color--red"
+                  />
+                </div>
+                <button class="product__heart">
+                  <img src="/assets/images/icons/heart.svg" alt="heart" />
+                </button>
+              </div>
+
+              <div class="product swiper-slide">
+                <img
+                  src="/assets/images/home/arrival3.png"
+                  alt="product"
+                  class="product__img"
+                />
+                <h3 class="product__title">Brand name</h3>
+                <p class="product__info">Product Name</p>
+                <p class="product__price">$879.00</p>
+                <div class="product__colors">
+                  <input
+                    type="radio"
+                    name="additional4"
+                    class="product__color product__color--white"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="additional4"
+                    class="product__color product__color--black"
+                  />
+                  <input
+                    type="radio"
+                    name="additional4"
+                    class="product__color product__color--red"
+                  />
+                </div>
+                <button class="product__heart">
+                  <img src="/assets/images/icons/heart.svg" alt="heart" />
+                </button>
+              </div>
+
+              <div class="product swiper-slide">
+                <img
+                  src="/assets/images/home/arrival3.png"
+                  alt="product"
+                  class="product__img"
+                />
+                <h3 class="product__title">Brand name</h3>
+                <p class="product__info">Product Name</p>
+                <p class="product__price">$879.00</p>
+                <div class="product__colors">
+                  <input
+                    type="radio"
+                    name="additional5"
+                    class="product__color product__color--white"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="additional5"
+                    class="product__color product__color--black"
+                  />
+                  <input
+                    type="radio"
+                    name="additional5"
+                    class="product__color product__color--red"
+                  />
+                </div>
+                <button class="product__heart">
+                  <img src="/assets/images/icons/heart.svg" alt="heart" />
+                </button>
+              </div>
+            </div>
+            <div class="swiper-button-next additional__next-btn"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__content">
+          <div class="footer__title">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+          </div>
+          <div class="footer__newletter">
+            <div class="footer__sub">Sign up for toward updates</div>
+            <p class="footer__newletter-info">
+              Receiving our newsletter with access to our latest collections,
+              events and news.
+            </p>
+            <form class="footer__form">
+              <input
+                type="email"
+                class="footer__input"
+                placeholder="Email Address"
+              />
+              <button class="footer__button">
+                <img
+                  src="/assets/images/icons/arrow-right-long-white.svg"
+                  alt="arrow"
+                />
+              </button>
+            </form>
+            <div class="footer__socials">
+              <a href="#" class="footer__social"
+                ><img src="/assets/images/icons/instagram.svg" alt="instagram"
+              /></a>
+              <a href="#" class="footer__social"
+                ><img src="/assets/images/icons/facebook.svg" alt="facebook"
+              /></a>
+            </div>
+          </div>
+          <div class="footer__links-container">
+            <div class="footer__links-column">
+              <div class="footer__sub">Customer Care</div>
+              <ul class="footer__links">
+                <li class="footer__link">
+                  <a href="#" class="footer__href">FAQ</a>
+                </li>
+                <li class="footer__link">
+                  <a href="#" class="footer__href">Shipping & Returns</a>
+                </li>
+                <li class="footer__link">
+                  <a href="#" class="footer__href">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__links-column">
+              <div class="footer__sub">Company</div>
+              <ul class="footer__links">
+                <li class="footer__link">
+                  <a href="#" class="footer__href">About Us</a>
+                </li>
+                <li class="footer__link">
+                  <a href="#" class="footer__href">Journal</a>
+                </li>
+                <li class="footer__link">
+                  <a href="#" class="footer__href">Press</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="footer__bottom">&copy; 2021 Toward Brand</p>
+      </div>
+    </footer>
+  </body>
+</html>

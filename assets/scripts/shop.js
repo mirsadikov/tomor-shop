@@ -4,6 +4,7 @@ const filterBtn = document.querySelector('.filter__filter-btn');
 const sortBtn = document.querySelector('.filter__sort-btn');
 const filter = document.querySelector('.filter');
 const sortContainer = document.querySelector('.sorting');
+const productsContainer = document.querySelector('.products');
 
 accordionsContainer.addEventListener('click', (event) => {
   const target = event.target;
@@ -38,5 +39,14 @@ filter.addEventListener('click', (event) => {
     sortContainer.classList.toggle('sorting--open');
     sortBtn.classList.toggle('filter__button--open');
     filterBtn.classList.remove('filter__button--open');
+  }
+});
+
+productsContainer.addEventListener('click', (event) => {
+  const target = event.target;
+  const product = target.closest('.product');
+
+  if (!target.classList.contains('product__color') && product) {
+    window.location.href = 'product.html';
   }
 });

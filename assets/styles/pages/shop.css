@@ -292,6 +292,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .product__color::before {
@@ -317,6 +318,7 @@
 .product__color--red {
   background-color: #862626;
 }
+
 
 @media only screen and (max-width: 1000px) {
   .hero__title {
