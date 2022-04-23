@@ -411,4 +411,13 @@
   .hero__prev-btn {
     display: flex;
   }
+
+  .hero__slider-container {
+    position: relative;
+  }
+
+  .hero__thumbs-container {
+    position: absolute;
+    bottom: 0;
+  }
 }
